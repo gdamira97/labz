@@ -1,0 +1,93 @@
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<div class="header">
+    <div class="headerLogo">
+        TATLILAR
+    </div>
+    <div class="navbar">
+        <ul>
+            <li id="main" class="active">ГЛАВНАЯ</li>
+            <li id="about">О НАС</li>
+            <li id="offer">ЗАКАЗАТЬ</li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper">
+    <div id="mainWrapper" class="active page">
+        <div class="mainWrapperImage">
+            <div id="imageContainer">
+                <div class="left"><a>❰</a></div>
+                <img src="content/3.jpg">
+                <input type="hidden" value="3" id="photoNum">
+                <div class="right"><a>❱</a></div>
+            </div>
+        </div>
+        <ul>
+            <li style="background-image: url(content/1.jpg)"></li>
+            <li style="background-image: url(content/2.jpg)"></li>
+            <li class="activePhoto" style="background-image: url(content/3.jpg)"></li>
+            <li style="background-image: url(content/4.jpg)"></li>
+            <li style="background-image: url(content/5.jpg)"></li>
+        </ul>
+    </div>
+    <div id="aboutWrapper" class="inactive page">
+        <img width="100%" src="content/0.jpg">
+        <h>В этом чудесном сайте, вы сможете найти то что вам нужно! Все самое вкусное у нас!!!</h>
+    </div>
+    <div id="offerWrapper" class="inactive page">
+    
+
+        <div id="offerselect">
+            
+        </div>
+        
+        <div id="basket">
+            <a class="openpopup">Offer quantity</a>
+            <a id="offerquantity" class="openpopup">0</a> >>
+            <a id="offerprice" class="openpopup">0тг</a>
+            <a id="offeropen">▲</a>
+            <ul id="offerlist">
+            </ul>
+        </div>
+        <div id="buywindow">
+            <div id="buywindowback"></div>
+            <div id="buywindowpopup"> 
+            <ul id="basketgetall">
+            </ul>
+            <form id="basketform">
+                <input type="text" name="name" placeholder="Enter name" id="formName">
+                <input type="text" name="number" placeholder="Enter phone number" id="formNumber">
+                <input type="email" name="email" placeholder="Enter e-Mail" id="formEmail">
+                <input type="hidden" name="basket" id="formBasket">
+                <input type="submit" value="BUY">
+            </form>
+            </div>
+            <img src="content/success.png" id="buysuccess">
+        </div>
+        
+    </div>
+</div>
+<div class="footer">
+    
+    <ul>
+        <li><a href="#">TATLILAR.kz</a></li>
+        <li><a href="javascript:;" class="footButt">
+        <input type="hidden" value="main">
+        ГЛАВНАЯ</a></li>
+        <li><a href="javascript:;" class="footButt">
+        <input type="hidden" value="about">
+        О НАС</a></li>
+        <li><a href="javascript:;" class="footButt">
+        <input type="hidden" value="offer">
+        ЗАКАЗАТЬ</a></li>
+        <li><a href="admin.php">ADMIN</a></li>
+
+    </ul>
+
+</div>
+<div class="back" id="mainBack"></div>
+<div class="back" id="aboutBack"></div>
+<div class="back" id="offerBack"></div>
